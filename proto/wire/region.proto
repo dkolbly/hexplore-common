@@ -1,0 +1,10 @@
+package wire;
+
+message Region {
+  required sint32 originX = 1;
+  required sint32 originY = 2;
+  required bytes spanArray = 3;
+  optional sint32 basement = 4 [default = -1000];
+  repeated string symbols = 5;
+  repeated bytes extras = 6;
+}
